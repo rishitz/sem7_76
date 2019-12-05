@@ -1,0 +1,23 @@
+<h1>{{title}}</h1>
+<h2>{{message}}</h2>
+<form method="POST" action="/">
+<h1>Form validation</h1>
+Email: <input type="text" name="email" value="{{user.email}}"><br>
+{{#if error.email}}
+<p style="color:red">{{error.email.msg}}</p>
+{{/if}}
+Password: <input type="password" name="ps" value="{{user.ps}}"><br>
+{{#if error.ps}}
+<p style="color:red">{{error.ps.msg}}</p>
+{{/if}}
+Confirm password: <input type="password" name="cp"><br>
+{{#if error.cp}}
+<p style="color:red">{{error.cp.msg}}</p>
+{{/if}}
+<br>
+<button type="submit" id="sub">Sign-Up</button> 
+</form>
+
+
+
+

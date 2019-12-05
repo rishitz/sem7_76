@@ -1,0 +1,22 @@
+<h1>{{title}}</h1>
+
+<form method="POST" action="/update/" >
+
+<input type="hidden" name="id" value="{{records._id}}">
+
+student Name: <input type="text" name="nm" value="{{records.name}}"><br>
+
+
+
+
+Marks: <input type="text" name="ms" value="{{records.marks}}"><br><br>
+
+
+
+Gender: <input type="gender" name="gn" value="{{records.gender}}"><br>
+
+
+<br>
+<button type="submit" id="sub">Update</button> 
+
+</form>

@@ -1,0 +1,10 @@
+<p>st-Data</p>
+<table>
+    <tr *ngFor="let d of studlist">
+        <td>{{d.uname}}</td>
+        <td>{{d.city}}</td>
+        <td>{{d.pass}}</td>
+        <td><a routerLink="" (click)="del(d)">Delete</a></td>
+        <td><a routerLink="/create/{{d._id}}">Edit</a></td>
+    </tr>
+</table>

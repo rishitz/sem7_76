@@ -1,0 +1,38 @@
+<table>
+<thead>
+<tr>
+<th> Name </th>
+<th> marks </th>
+<th>gender<th>
+<th colspan=2>Operation</th>
+
+</tr>
+</thead>
+{{#each user}}
+<tr>
+<td>{{this.name}}</td>
+<td>{{this.marks}}</td>
+<td>{{this.gender}}</td>
+<td><a href="/edit/{{this._id}}">Edit</a></td>
+<td><a href="/delete/{{this._id}}">Delete</a></td>
+</tr>
+{{/each}}
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

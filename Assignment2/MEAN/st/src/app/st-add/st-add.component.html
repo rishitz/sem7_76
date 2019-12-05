@@ -1,0 +1,13 @@
+<p>st-add works!</p>
+<form [formGroup]="angForm">
+    <input type="hidden" formControlName="sid"><br>
+    Name:<input type="text" formControlName="uname"><br>
+    city:<select formControlName="city">
+        <option value="surat">st</option>
+        <option value="navsari">nvs</option>
+    </select>
+    pass:<input type="password" formControlName="pass"><br>
+
+    <button (click)="add()">insert</button>
+     
+</form>
